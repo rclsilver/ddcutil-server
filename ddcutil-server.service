@@ -1,0 +1,11 @@
+[Unit]
+Description=ddcutil server
+After=network.target
+
+[Service]
+Restart=always
+User=root
+ExecStart=/usr/local/bin/ddcutil-server
+
+[Install]
+WantedBy=multi-user.target
